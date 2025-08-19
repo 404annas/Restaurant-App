@@ -4,6 +4,11 @@ html {
     scroll-behavior: smooth
 }
 
+@theme {
+    --color-primary: #4fbf8b;
+    --color-primary-dull: #44ae7c;
+}
+
 .pop-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
