@@ -4,60 +4,55 @@ html {
     scroll-behavior: smooth
 }
 
-@theme {
-    --color-primary: #4fbf8b;
-    --color-primary-dull: #44ae7c;
-}
-
-.pop-thin {
+.p-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
 }
 
-.pop-extralight {
+.p-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
 
-.pop-light {
+.p-light {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.pop-regular {
+.p-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.pop-medium {
+.p-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.pop-semibold {
+.p-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
-.pop-bold {
+.p-bold {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.pop-extrabold {
+.p-extrabold {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: normal;
 }
 
-.pop-black {
+.p-black {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
