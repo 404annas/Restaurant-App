@@ -8,7 +8,7 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const { setShowUserLogin } = useAppContext();
+    const { setShowUserLogin, setUser } = useAppContext();
 
     useEffect(() => {
         document.body.style.overflow = "hidden";
@@ -17,9 +17,18 @@ const Login = () => {
         };
     }, []);
 
+    const handleFormShubmit = async (e) => {
+        e.preventDefault()
+        setUser({
+            email: "test@gmail.com",
+            password: "test123"
+        })
+        setShowUserLogin(false)
+    }
+
     return (
         <div onClick={() => setShowUserLogin(false)} className='fixed top-0 bottom-0 left-0 right-0 z-30 flex items-center text-sm text-gray-600 bg-black/50'>
-            <form onClick={(e) => e.stopPropagation()} className="flex flex-col gap-4 m-auto items-start p-8 py-12 w-80 sm:w-[400px] text-gray-500 rounded-lg shadow-xl border border-gray-200 bg-white">
+            <form onSubmit={handleFormShubmit} onClick={(e) => e.stopPropagation()} className="flex flex-col gap-4 m-auto items-start p-8 py-12 w-80 sm:w-[400px] text-gray-500 rounded-lg shadow-xl border border-gray-200 bg-white">
                 <p className="text-2xl p-medium m-auto">
                     <span className="text-primary">User</span> {state === "login" ? "Login" : "Sign Up"}
                 </p>
